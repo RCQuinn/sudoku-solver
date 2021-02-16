@@ -1,15 +1,14 @@
-# sudoku_solver
-# 2021 by Ramen Crowe
-#
-# A sudoku puzzle solver based on the Model-View-Controller framework.
-# Thanks to Steven Lipton for the template:
-#   (https://makeapppie.com/2014/05/23/from-apple-to-raspberry-pi-a-mvc-template-for-tkinter/
+"""A Sudoku puzzle solver."""
 
+# Standard library imports
 import tkinter as tk
-from classes.controller import Controller
+
+# Local imports
+from sudoku_solver.classes.controller import Controller
 
 
-def main():
+def main() -> None:
+    """Initialises fundamental components."""
     root = tk.Tk()
     root.title("Sudoku Solver")
     Controller(root)
